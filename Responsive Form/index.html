@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulário Responsivo em HTML e CSS">
+
+  <title>Responsive Form</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="container">
+    <header>Registration Form</header>
+
+    <form action="#" class="form">
+      <div class="input-box">
+        <label for="full-name">Full Name</label>
+        <input type="text" name="full-name" id="full-name" placeholder="Enter Full Name" required>
+      </div>
+
+      <div class="input-box">
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="Enter Email Address" required>
+      </div>
+
+      <div class="column">
+        <div class="input-box">
+          <label for="phone">Phone Number</label>
+          <input type="number" name="phone" id="phone" placeholder="Enter Phone Number" required>
+        </div>
+
+        <div class="input-box">
+          <label for="birth-date">Birth Date</label>
+          <input type="date" name="birth-date" id="birth-date" placeholder="Enter Birth Date" required>
+        </div>
+      </div>
+
+      <div class="gender-box">
+        <h3>Gender</h3>
+        <div class="gender-option">
+          <div class="gender">
+            <input type="radio" name="gender" id="gender-male" required>
+            <label for="gender-male">Male</label>
+          </div>
+
+          <div class="gender">
+            <input type="radio" name="gender" id="gender-female" required>
+            <label for="gender-female">Female</label>
+          </div>
+
+          <div class="gender">
+            <input type="radio" name="gender" id="gender-other" required>
+            <label for="gender-other">Other</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-box address">
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address" placeholder="Enter Address" required>
+        <input type="text" name="address-line2" id="address-line2" placeholder="Enter Address Line 2" required>
+        <div class="column">
+          <div class="select-box">
+            <select>
+              <option hidden>Country</option>
+              <option>America</option>
+              <option>Japan</option>
+              <option>India</option>
+              <option>Nepal</option>
+            </select>
+          </div>
+          <input type="text" name="city" id="city" placeholder="Enter Your City" required>
+        </div>
+        <div class="column">
+          <input type="text" name="region" id="region" placeholder="Enter Your Region" required>
+        <input type="number" name="postal-code" id="postal-code" placeholder="Enter Postal Code" required>
+        </div>
+      </div>
+
+      <button>Submit</button>
+    </form>
+  </section>
+</body>
+</html>
